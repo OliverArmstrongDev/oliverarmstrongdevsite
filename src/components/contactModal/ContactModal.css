@@ -1,0 +1,72 @@
+.modal {
+    position: fixed; 
+    z-index: 99999; 
+    left: 25%;
+    top: 20%;
+    width: 50%; 
+    height: 100%; 
+    overflow: auto; 
+    
+  }
+
+  .modal-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #050505;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    height: auto;
+    min-height: 30vh;
+  }
+  .modal-inner-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    
+  }
+  #contact-form{
+    padding-top: 2em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .btn-area{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .btn-main-md{
+    width: 40%;
+  }
+  .error{
+    margin-top: 1em;
+    color: red;
+    text-align: center;
+  }
+  .success{
+    margin-top: 1em;
+    color: green;
+    text-align: center;
+  }
+  .form-inputs{
+    margin: 5px 0;
+    width: 100%;
+    border: 0;
+    background: #2b2b2b;
+    height: 40px;
+    font-size: 16px;
+    color: #8d8d8d;
+    padding: 0 20px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  #close{
+    margin-bottom: auto;
+  }
