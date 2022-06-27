@@ -1,7 +1,7 @@
 .modal {
     position: fixed; 
     z-index: 99999; 
-    left: 25%;
+    /* left: 25%; */
     top: 20%;
     width: 50%; 
     height: 100%; 
@@ -45,6 +45,11 @@
   .btn-main-md{
     width: 40%;
   }
+  .disabled, .disabled:hover{
+    background-color: gray;
+    cursor: not-allowed;
+  }
+
   .error{
     margin-top: 1em;
     color: red;
@@ -69,4 +74,12 @@
   }
   #close{
     margin-bottom: auto;
+  }
+
+  @media screen and (min-width: 368px) and (max-width: 767px) {
+    .modal{
+      /* left: 0; */
+      width: 90%;
+      
+    }
   }

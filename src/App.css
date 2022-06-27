@@ -16,7 +16,7 @@ body{
 width: 100%;
 }
 .header{
-    height: 100vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,6 +30,7 @@ h1{
 h2{
     font-size: 1.3em;
     color: grey;
+    padding-left: 2em;
 }
 
 .green{
@@ -92,4 +93,20 @@ h2{
     position: fixed;
   width: 100%;
   z-index: -1;
+}
+
+/* Media queries */
+
+
+@media screen and (min-width: 368px) and (max-width: 430px) {
+    .header{
+      height: 100vh;
+     
+    }
+    h1{
+        font-size: 2.5em;
+    }
+    h2{
+        padding: 0;
+    }
 }

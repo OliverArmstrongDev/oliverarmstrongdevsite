@@ -48,11 +48,10 @@
 }
 
 .image-gallery{
-    max-width: 90%;
     z-index: 3;
     display: grid;
     align-items: center;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     grid-gap: 1rem;
     grid-template-rows: repeat(2, auto);
 }
@@ -107,3 +106,24 @@
     -webkit-animation-name: rubberBand;
     animation-name: rubberBand;
   }
+
+  /* media queries */
+
+  @media screen and (min-width: 768px) and (max-width: 1300px) {
+    .image-gallery{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     
+    }
+    .gallery-section{
+      height: 60vh;
+    }
+}
+@media screen and (min-width: 368px) and (max-width: 767px) {
+    .image-gallery{
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+     
+    }
+    .gallery-section{
+      height: 80vh;
+    }
+}

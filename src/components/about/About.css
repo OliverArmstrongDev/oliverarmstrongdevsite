@@ -3,7 +3,7 @@
     margin-bottom: 0;
     padding-top: 1.5em;
     padding-left: 3em;
-    height: 80vh;
+    height: 55vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -32,7 +32,7 @@
 }
 
 
-h1{
+.about h1{
     margin: 0;
     font-size: 4em;
 }
@@ -44,3 +44,28 @@ h1{
 }
 
 
+/* media queries */
+
+
+
+@media screen and (min-width: 560px) and (max-width: 1300px) {
+    .about-section{
+        padding-bottom: 9em;
+        height: 100vh;
+    }
+    .verticle-text {
+        margin-left: -2.7em;
+    }
+}
+@media screen and (min-width: 368px) and (max-width: 767px) {
+    .about-section{
+        height: auto;
+    }
+    .verticle-text {
+        margin-left: -1.9em;
+    }
+    .inner-content {
+        padding-left: 0;
+        width: 100%;
+    }
+}

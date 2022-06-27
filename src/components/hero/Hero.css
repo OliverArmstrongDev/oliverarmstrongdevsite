@@ -4,10 +4,21 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    max-width: 60%;
+    width: 90%;
 }
 .button-container{
     display: flex;
 }
 
 
+@media screen and (max-width: 1200px) {
+    .contact-section{
+        margin-top: 9em;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero{
+        width: 100%;
+        
+    }
+}

@@ -10,28 +10,32 @@ const ContactForm = () => {
         const [message, setMessage] = useState('');
         const [error, setError] = useState('');
         const [emailSent, setEmailSent] = useState(false);
-       // const [validDetails, setValidDetails] = useState(false);
         const form = useRef();
         const validDetails = useRef(false);
+        const isLoading = useRef(false);
 
       
     
         const checkDetails = () => {
             setError("");
             setEmailSent(false);
+            isLoading.current = true;
            
             if (name && email && message) {
                 if (!isValidEmail(email)) {
                     setError('The email address is an incorrect format.');
                     validDetails.current = false;
+                    isLoading.current = false;
                 }
                 else{
                     validDetails.current = true;
+                    isLoading.current = false;
                 }
                 
             } else {
                 setError('Please fill in all fields.');
                 validDetails.current = false;
+                isLoading.current = false;
             }
         }
 
@@ -56,10 +60,12 @@ const ContactForm = () => {
                     setMessage('');
                     setEmailSent(true);
                     setError("");
+                    isLoading.current = false;    
                 },
                 (error) => {
                   console.log(error.text);
-                  setError("FAILED...", error);
+                  setError("An Error occurred...", error);
+                  isLoading.current = false;
                 }
               );
             }
@@ -78,7 +84,9 @@ const ContactForm = () => {
             <input className='form-inputs' type="email" name='email' placeholder="Your email address" value={email} onChange={e => setEmail(e.target.value)} />
             <textarea className='form-inputs' name='message' placeholder="Your message" value={message} onChange={e => setMessage(e.target.value)}></textarea>
             <div className='btn-area'> 
-            <button className='btn-main-md' >Send Message</button>
+          {isLoading.current &&  <button disabled className='btn-main-md disabled' >Send Message</button>}
+          {!isLoading.current &&  <button className='btn-main-md' >Send Message</button>}
+         
            {emailSent && <span className={error ? "error" : "success"}>Message sent successfully!<br></br>I will be in touch soon.</span>}
            {error && <span className='error'>{error}</span>}
            </div>
