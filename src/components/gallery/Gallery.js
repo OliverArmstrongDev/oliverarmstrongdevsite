@@ -28,7 +28,7 @@ const Gallery = () => {
             <a ><img className='gallery-img' alt='gallery item' src={greyBurn}/></a>
             <a rel="noreferrer"  target={"_blank"} href='https://freebirdweddingfilms.com.au'><img className='gallery-img' alt='gallery item' src={freebird}/></a>
             <a rel="noreferrer"  target={"_blank"} href='https://frozen.oliverarmstrongdev.com/'><img className='gallery-img' alt='gallery item' src={frozen}/></a>
-            <a rel="noreferrer"  target={"_blank"} href='https://gradient.oliverarmstrongdev.com'><img className='gallery-img' alt='gallery item' src={gradient}/></a>
+            {/* <a rel="noreferrer"  target={"_blank"} href='https://gradient.oliverarmstrongdev.com'><img className='gallery-img' alt='gallery item' src={gradient}/></a> */}
             <a rel="noreferrer"  target={"_blank"} href='https://robotize.oliverarmstrongdev.com/'><img className='gallery-img' alt='gallery item' src={robotize}/></a>
            </div>
            <div className='shape-overlay'></div>

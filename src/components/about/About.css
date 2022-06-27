@@ -48,10 +48,10 @@
 
 
 
-@media screen and (min-width: 560px) and (max-width: 1300px) {
+@media screen and (min-width: 768px) and (max-width: 1300px) {
     .about-section{
-        padding-bottom: 9em;
-        height: 100vh;
+        padding-bottom: 2em;
+        
     }
     .verticle-text {
         margin-left: -2.7em;
@@ -60,12 +60,17 @@
 @media screen and (min-width: 368px) and (max-width: 767px) {
     .about-section{
         height: auto;
+        padding-left: 0;
     }
     .verticle-text {
-        margin-left: -1.9em;
+        margin-left: 0;
+        transform: rotate(0deg);
     }
     .inner-content {
         padding-left: 0;
         width: 100%;
+    }
+    .title-area{
+        flex-direction: column;
     }
 }

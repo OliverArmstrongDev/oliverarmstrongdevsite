@@ -11,20 +11,13 @@ const About = () => {
             </div>
             <div className='inner-content'>
             <p>
-            During a successful IT career in Technical and Systems Administrator roles, I attained extensive experience in desktop and server infrastructure design, building, support, and maintenance; which I find highly beneficial when developing software. 
+            During a successful IT career in Technical and Systems Administrator roles, I attained extensive experience in designing and building desktop and server infrastructure. 
             <br></br><br></br>
-            As with my technical IT experience, I have a reasonably broad range of experience with software development technologies too. In 2010, I was fortunate to gain 14 months of full-time software development experience in a previous role, building various .Net Windows applications in C#, both standalone and utilising SQL. 
+            Along the way I learned software development; starting with building Windows apps with C# and .Net Framework and moving later into website development - Wordpress, HTML, CSS and JavaScript then on to working with ReactJS.
             <br></br><br></br>
-            Since then I completed some C# development projects, and I segued into web development and more recently into React development. 
+            I have worked on various freelance development projects for businesses, ranging from static websites and CRM modifications, to more complex projects like a customer-logged fault tracking web portal.
             <br></br><br></br>
-            I’m comfortable working with the React library, and developing in C#, JavaScript (including ES6), HTML, and CSS; as well as working with JSON, API’s, and Web tokens, among other things.
-            <br></br><br></br>
-            I am a highly motivated person with wonderful people skills, social confidence and great written and verbal communication skills. I naturally “think outside of the box", so I love being challenged by complex problems. 
-            <br></br><br></br>
-            I’m self-taught in all things IT, so I’m used to jumping into the deep end, and kicking like crazy until I get to the top and swim! 
-            Additionally, I have gained a wealth of skills and experience as an entrepreneur, which apply well with software development; resilience, persistence, prioritising, and sales are a few worth mentioning.
-
-
+            My past technical experience puts me ahead of many developers, as I have in-depth knowledge and skills of many backend technologies, which is beneficial for providing stable and reliable front end applications.
 
             </p>
             </div>
