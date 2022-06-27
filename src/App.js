@@ -9,6 +9,7 @@ import About from './components/about/About';
 import ContactModal from './components/contactModal/ContactModal';
 import Gallery from './components/gallery/Gallery';
 import Contact from './components/contact/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
     const [isVisible, setIsVisible] = useState(false);
@@ -27,6 +28,7 @@ function App() {
             <About />
             <Gallery />
             <Contact />
+            <Footer />
             </div>
 
         { isVisible && <ContactModal setIsVisible={setIsVisible}/>}

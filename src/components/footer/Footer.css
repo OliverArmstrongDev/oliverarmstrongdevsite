@@ -1,0 +1,26 @@
+.footer-section{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #000;
+    border-top: rgb(74, 74, 74) 1px solid;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.footer-content{
+    font-size: 13px;
+    margin-top: 0.9em;
+}
+.icons-area{
+    display: flex;
+    justify-content: center;
+}
+.logo-img{
+    width: 25px;
+    margin: 0 1em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}

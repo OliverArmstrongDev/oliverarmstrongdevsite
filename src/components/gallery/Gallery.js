@@ -4,7 +4,7 @@ import React from 'react';
 import capsLog from "../../assets/images/CaptainsLog.png";
 import frozen from "../../assets/images/frozenSite.png";
 import freebird from "../../assets/images/FreebirdSite.jpg";
-import gradient from "../../assets/images/gradientSite.png";
+import adjusttoLife from "../../assets/images/ATL.png";
 import greyBurn from "../../assets/images/GreyburnSite.png";
 import robotize from "../../assets/images/robotizeSite.jpg";
 
@@ -28,7 +28,7 @@ const Gallery = () => {
             <a ><img className='gallery-img' alt='gallery item' src={greyBurn}/></a>
             <a rel="noreferrer"  target={"_blank"} href='https://freebirdweddingfilms.com.au'><img className='gallery-img' alt='gallery item' src={freebird}/></a>
             <a rel="noreferrer"  target={"_blank"} href='https://frozen.oliverarmstrongdev.com/'><img className='gallery-img' alt='gallery item' src={frozen}/></a>
-            {/* <a rel="noreferrer"  target={"_blank"} href='https://gradient.oliverarmstrongdev.com'><img className='gallery-img' alt='gallery item' src={gradient}/></a> */}
+            <a rel="noreferrer"  target={"_blank"} href='https://adjusttolife.com.au'><img className='gallery-img' alt='gallery item' src={adjusttoLife}/></a>
             <a rel="noreferrer"  target={"_blank"} href='https://robotize.oliverarmstrongdev.com/'><img className='gallery-img' alt='gallery item' src={robotize}/></a>
            </div>
            <div className='shape-overlay'></div>
